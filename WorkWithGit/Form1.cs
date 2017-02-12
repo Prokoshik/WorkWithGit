@@ -20,11 +20,19 @@ namespace WorkWithGit
         private void checkBoxTricks_CheckedChanged(object sender, EventArgs e)
         {
             button1.Visible = !checkBoxTricks.Checked;
+            labelKorda.Visible = !checkBoxTricks.Checked;
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form().Show();
+            MessageBox.Show(new Form { TopMost = true }, "Кордушка моя!", "title",
+     MessageBoxButtons.OK,
+     MessageBoxIcon.Warning);
+
+            labelKorda.Visible = true;
+            
+
 
 
         }
