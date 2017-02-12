@@ -16,5 +16,10 @@ namespace WorkWithGit
         {
             InitializeComponent();
         }
+
+        private void checkBoxTricks_CheckedChanged(object sender, EventArgs e)
+        {
+            button1.Visible = !checkBoxTricks.Checked;
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxTricks = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -52,16 +53,28 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "I am label :3";
             // 
+            // checkBoxTricks
+            // 
+            this.checkBoxTricks.AutoSize = true;
+            this.checkBoxTricks.Location = new System.Drawing.Point(12, 12);
+            this.checkBoxTricks.Name = "checkBoxTricks";
+            this.checkBoxTricks.Size = new System.Drawing.Size(163, 24);
+            this.checkBoxTricks.TabIndex = 2;
+            this.checkBoxTricks.Text = "Спрятать кнопку";
+            this.checkBoxTricks.UseVisualStyleBackColor = true;
+            this.checkBoxTricks.CheckedChanged += new System.EventHandler(this.checkBoxTricks_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 402);
+            this.ClientSize = new System.Drawing.Size(538, 356);
+            this.Controls.Add(this.checkBoxTricks);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Первый совместный проект ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,6 +84,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBoxTricks;
     }
 }
 
