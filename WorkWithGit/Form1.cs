@@ -21,5 +21,12 @@ namespace WorkWithGit
         {
             button1.Visible = !checkBoxTricks.Checked;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form().Show();
+
+
+        }
     }
 }
